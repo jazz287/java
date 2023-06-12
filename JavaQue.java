@@ -1,13 +1,24 @@
-
+import java.util.*;
 public class JavaQue{
     public static void main(String arg[]){
- int n = 47567;
+     Scanner sc = new Scanner(System.in);
+    
+     
 
-while(n>0) {
-   int lastDigit = n%10;
-   System.out.print(lastDigit);
-   n = n/10;
-}
+     do{
+       System.out.print("Enter a number :");
+        int num = sc.nextInt() ;
+      if(num % 10 == 0){
+         continue;
+      }
+   System.out.println("The number was: " + num);
+      
+     }
+      
+      while(true);
+ 
+ 
+
 
 
     } 
