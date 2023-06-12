@@ -9,7 +9,7 @@ public class JavaQue{
        System.out.print("Enter a number :");
         int num = sc.nextInt() ;
       if(num % 10 == 0){
-         continue;
+         break;
       }
    System.out.println("The number was: " + num);
       
