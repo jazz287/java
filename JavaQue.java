@@ -1,19 +1,24 @@
 
 public class JavaQue{
 
-public static int product(int a , int b ){
-  int product = a * b ;
-  return product;
+public static int binomialCoeff(int n, int r){
+    int fact_n = factorial(n);
+    int fact_r = factorial(r);
+    int fact_nmr = factorial(n-r);
+    int binomialCoeff = fact_n / fact_r * fact_nmr ;
+    return binomialCoeff;
+}
+
+public static int factorial(int n){
+    int f = 1;
+    for(int i = 1; i<=n ; i++){
+        f = f* i;
+    }
+    return f ;
 }
     public static void main(String arg[]){
-     int  a = 3;
-     int b = 5 ;
-     int prod = product(a,b);
-     
-System.out.println("the Product is :" + prod);
-prod = product(5,6);
-System.out.println("the Product is :" + prod);
-
+    
+    System.out.print(binomialCoeff(5,2));
     
 
     
