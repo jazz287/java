@@ -1,33 +1,21 @@
 
 public class JavaQue{
 
-public static boolean isPrime(int n){
-// 1 is neither prime nor composite
-  if(n==2){
-return true;
-
-}
- for(int i = 2 ;i<= Math.sqrt(n) ; i++){ //optimized code
-    if( n % i == 0){
-        return false;
+public static int binaryConversion(int n){
+     int pow = 0;
+     int decNum = 0;
+    for(  n = n  ; n > 0  ; n= n/10 , pow++ ){
+        int lastDigit = n % 10;
+        decNum = decNum + (lastDigit * (int) Math.pow(2,pow));
+        
     }
-    
- }
-return true;
-}
 
-public static void primesInRange(int n){
-for(int i= 2 ; i <= n ; i++) {
-    if(isPrime(i)){
-        System.out.print(i + " ");
-    }
-}
-
+return decNum;
 }
 
     public static void main(String args[]){
     
-    primesInRange(16);
+    System.out.print( binaryConversion(100));
     
 
     
