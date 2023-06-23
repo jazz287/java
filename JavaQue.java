@@ -1,21 +1,19 @@
 import java.util.* ;
 public class JavaQue{
- //BinarySearch
-public static int BinarySearch(int numbers[],int key){
-    int start = 0 ,end = numbers.length-1 ;
-    while(start <= end){
-        int mid = (start + end)/2 ;
-         if(key==numbers[mid]){
-            return mid;
-         }
-         if(key < numbers[mid]){
-            end = mid -1;
-         }
-         else{
-            start = mid +1;
-         }
+ //Reverse an Array
+public static void Reverse(int numbers[]){
+    int first = 0 , last = numbers.length -1  ;
+    while(first < last){
+        int temp = numbers[last] ;
+        numbers[last] = numbers[first];
+        numbers[first] = temp ;
+        
+
+        first++;
+        last--;
+        
     }
-    return -1 ;
+    
     
  }
  
@@ -27,11 +25,14 @@ public static int BinarySearch(int numbers[],int key){
 
     public static void main(String args[]){
         int numbers[] = {4,6,2,8,10,12,14};
-        int key = 10;
-        int index = BinarySearch(numbers,key) ;
-        System.out.println("number is : " + index);
 
+        
+     Reverse(numbers);
+     //print
+     for(int i = 0 ; i < numbers.length ; i++){
+        System.out.println(numbers[i]);
 
+     }
 
 }
  
