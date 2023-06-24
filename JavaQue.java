@@ -2,20 +2,20 @@ import java.util.* ;
 public class JavaQue{
  //Reverse an Array
 public static void Reverse(int numbers[]){
-    int first = 0 , last = numbers.length -1  ;
-    while(first < last){
-        int temp = numbers[last] ;
-        numbers[last] = numbers[first];
-        numbers[first] = temp ;
+    int temp[] = new int[numbers.length];
+    for(int i = 0 ; i < numbers.length ; i++){
+        temp[i] = numbers[numbers.length-1-i];
         
-
-        first++;
-        last--;
+    }
+    for (int i = 0 ; i < temp.length ; i++){
+        numbers[i]= temp[i];
+    }
+    
         
     }
     
     
- }
+ 
  
  
  
@@ -28,12 +28,11 @@ public static void Reverse(int numbers[]){
 
         
      Reverse(numbers);
-     //print
      for(int i = 0 ; i < numbers.length ; i++){
         System.out.println(numbers[i]);
+     }
 
      }
 
 }
  
-}
