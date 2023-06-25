@@ -14,26 +14,28 @@ public static void subArrays(int numbers[]){
     int end = j;
     int Sum = 0;
     for(int k = start ; k <= end ; k++){
-      Sum += numbers[k] ;}
+      Sum += numbers[k] ;
+      }
        tS++;
       for( int k = start ; k <= end ; k++ ){
-         System.out.println( numbers[k] + " ") ;
+         System.out.print( numbers[k] + " ") ;
          
       }
-           System.out.print("sum is :" + Sum); 
+
+           System.out.println("sum is :" + Sum); 
 
     }
      
     
    
-    
     System.out.println();
+   
   
   
     
    }
    
-   System.out.println();
+   
    System.out.print("total number of subArrays are :" + tS);
    }
    
