@@ -1,18 +1,49 @@
 import java.util.* ;
 public class JavaQue{
- //Reverse an Array
-public static void Reverse(int numbers[]){
-    int temp[] = new int[numbers.length];
-    for(int i = 0 ; i < numbers.length ; i++){
-        temp[i] = numbers[numbers.length-1-i];
-        
-    }
-    for (int i = 0 ; i < temp.length ; i++){
-        numbers[i]= temp[i];
-    }
+ //Print subarrays
+
+
+public static void subArrays(int numbers[]){
+   int tS = 0;
+   
+   for(int i = 0 ; i < numbers.length ; i++){
+    int start = i;
     
-        
+   
+   for(int j = i ; j< numbers.length ; j++){
+    int end = j;
+    int Sum = 0;
+    for(int k = start ; k <= end ; k++){
+      Sum += numbers[k] ;}
+       tS++;
+      for( int k = start ; k <= end ; k++ ){
+         System.out.println( numbers[k] + " ") ;
+         
+      }
+           System.out.print("sum is :" + Sum); 
+
     }
+     
+    
+   
+    
+    System.out.println();
+  
+  
+    
+   }
+   
+   System.out.println();
+   System.out.print("total number of subArrays are :" + tS);
+   }
+   
+   
+
+
+
+
+       
+    
     
     
  
@@ -24,15 +55,14 @@ public static void Reverse(int numbers[]){
 
 
     public static void main(String args[]){
-        int numbers[] = {4,6,2,8,10,12,14};
+        int numbers[] = {1,2,3,4,5,6,7,8};
 
         
-     Reverse(numbers);
-     for(int i = 0 ; i < numbers.length ; i++){
-        System.out.println(numbers[i]);
+     subArrays(numbers);
+        
      }
 
-     }
+     
 
 }
  
