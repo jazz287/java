@@ -1,63 +1,25 @@
 import java.util.* ;
 public class JavaQue{
- //Print subarrays
-
-
-public static void subArrays(int numbers[]){
- 
-   int max = Integer.MIN_VALUE;
-   int currSum = 0 ;
-   int prefix[] = new int[numbers.length];
-   prefix[0] = numbers[0];
-  
-   for(int i = 1 ; i < prefix.length ; i++){
-    prefix[i] = prefix[i-1] + numbers[i]; }
-  
-   
-
-   for(int i = 0 ; i< numbers.length ; i++){
-     int start = i;
-     
-
-   for(int j = i ; j < numbers.length ; j++ ){
-      int end = j ;
-
-      currSum = start == 0 ? prefix[end] : prefix[end]- prefix[start -1];
-   }
-     
-     if(currSum > max  ){
-         max = currSum;
-      }
-  
-    
-
+ // kandanes for negative numbers
+        public static void kandanes(int numbers[]) {
+       int ms = numbers[0];
+       int cS = numbers[0] ;
+       for(int i = 1 ; i< numbers.length ; i++){
+        cS = Math.max(cS , cS + numbers[i] );
+         ms = Math.max(cS,ms);
        }
-        
-        
-        
-      
-      
        
+       System.out.print("max number is :" + ms);
+        } 
+        
       
-        
-   System.out.println("max value is :" + max );
-        
-  
-    }
-     
-   
-    
-   
-   
-  
-   
    
    
     public static void main(String args[]){
-        int numbers[] = {1,2,3,4,5,6,7,8};
+        int numbers[] = {-1,-2,-3,-4,-5,-6,-7,-8};
 
         
-     subArrays(numbers);
+     kandanes(numbers);
         
      }
 
