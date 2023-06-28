@@ -17,7 +17,7 @@ for(int i = 1 ; i < Prices.length ; i++){
 for ( int i = 1 ; i<Prices.length ; i++){
 
 
- bP[i] = Math.min(bP[i] , Prices[i-1]);
+ bP[i] = Math.min(bP[i-1] , Prices[i-1]);
  
 }
 
