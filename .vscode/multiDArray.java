@@ -1,20 +1,18 @@
 import java.util.*;
 public class multiDArray{
 
-public static boolean Search(int matrix[][],int key,int n , int m){
-  for(int i = 0 ; i <n ; i++){
-    for(int j =0 ; j< m ; j++){
-        if(matrix[i][j]==key){
-        System.out.println("key found at"+ "(" + i +"," + j + ")");
-        return true ;
-        }  
-}
+public static int Search(int matrix[][],int largest){
+  for(int i = 0 ; i <matrix.length ; i++){
+    for(int j =0 ; j< matrix[0].length ; j++){
+       if(matrix[i][j] > largest){
+        largest = matrix[i][j];
+       }
   }
-  System.out.print("key not found");
-  return false;
+  }
+return largest ;
 }
-
 public static void main (String args[]){
+int largest = Integer.MIN_VALUE ;
 int matrix[][] = new int [3][3];
 int n = matrix.length , m = matrix[0].length;
 
@@ -33,7 +31,7 @@ for(int i = 0 ; i<n ; i++){
     System.out.println();
 }
  
- Search(matrix,5,n,m);
+ System.out.print(Search(matrix,largest));
 
 }
 }
