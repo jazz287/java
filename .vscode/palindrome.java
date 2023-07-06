@@ -5,14 +5,14 @@ public class palindrome{
 public static boolean printPalind(String str){
 
     int n = str.length();
-for(int i = 0 ; i < n ; i++){
+for(int i = 0 ; i < n/2 ; i++){
  if(str.charAt(i) == str.charAt(n-1-i)){
-    System.out.print("It is a palindrome");
-    return true;
+    System.out.println("It is a palindrome");
+    return true;   
  }
 
 }
-System.out.print("It is not a palindrome");
+System.out.println("It is not a palindrome");
 return false;
 }
 
@@ -26,7 +26,8 @@ Scanner sc = new Scanner(System.in);
 String str1 = sc.next();
 
 // printing the palindrome
-printPalind(str1);
+
+System.out.print (printPalind(str1));
 
 }
 
