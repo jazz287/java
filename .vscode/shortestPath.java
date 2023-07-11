@@ -12,7 +12,7 @@ for(int i = si ; i<ei ; i++){
 
 
 
-
+//substring is a string method
 public static void main(String args[]){
 
 String str = "HELLOWORLD";
