@@ -9,7 +9,10 @@ for(int i = si ; i<ei ; i++){
  return substring ;
 }
 */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1922c5b9331164181ffcb45974b4237c6dff6a40
 
 
 //substring is a string method
