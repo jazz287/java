@@ -9,6 +9,6 @@ public class Builder{
         sb.append(ch);
     }
     // printing abcdefghijklmnopqrstuvwxyz
-    System.out.print(sb);
+    System.out.print(sb.toString());
     }
 }

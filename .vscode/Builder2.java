@@ -1,6 +1,9 @@
-public class UpperCase{
+public class Builder2 {
 
-public static String toUpperCase(String str){
+
+
+public static void main(String args[]){
+String str = "jasmine wadhwa" ;
 
 StringBuilder sb = new StringBuilder("");
 
@@ -17,23 +20,10 @@ for(int i = 1 ; i <str.length() ; i++){
         sb.append(str.charAt(i));
     }
 }
-return sb.toString() ;
-}
 
 
-
-
-
-public static void main (String args[]){
-
-String str = "hi, i am jasmine";
-System.out.print(toUpperCase(str));
-
+System.out.print(sb);
 
 }
-
-
-
-
 
 }
