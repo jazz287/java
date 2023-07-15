@@ -27,7 +27,7 @@ String str1 = sc.next();
 
 // printing the palindrome
 
-System.out.print (printPalind(str1));
+System.out.print (printPalind(str1)); //tfvyhgyhvgvh
 
 }
 
