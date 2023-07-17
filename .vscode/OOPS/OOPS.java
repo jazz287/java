@@ -4,7 +4,7 @@ public class OOPS {
     p1.setColor("Blue");
     System.out.println(p1.getcolor()); // implementing getters and setters
     p1.setTip(5);
-    System.out.println(p1.getTip());
+    System.out.println(this.tip);
 
     }
 }
