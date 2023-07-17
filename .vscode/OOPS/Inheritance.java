@@ -1,5 +1,5 @@
 public class Inheritance {
-
+// single level inheritnace
 public static void main(String args[]){
     Fish shark = new Fish(); // fish() is a constructor here 
     shark.eat();
@@ -11,7 +11,7 @@ class Animal{
     void eat() {
         System.out.println("eats");
     }
-
+//uhuhhih
     void breathe(){
         System.out.println("breathes");
     }
