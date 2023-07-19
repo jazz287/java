@@ -7,10 +7,10 @@ System.out.println(rocky.color);
 
 Dog dobbie = new Dog();
 dobbie.breathes();
-dobbie.color = "Golden Brown";
+dobbie.color = "Golden Brown"; //.....
 System.out.println(dobbie.color);
 
-}
+} //...
 }
 class Animals{
     String color;
@@ -29,7 +29,7 @@ class Dog extends Animals {
 }
 }
 
-class Fish extends Animals {
+class Fish extends Animals { 
     int fins ;
     void swims(){
         System.out.println("swims");
