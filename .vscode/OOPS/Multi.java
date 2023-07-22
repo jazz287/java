@@ -5,6 +5,7 @@ public class Multi {
     dobby.breathes();
     dobby.color = "Golden Brown";
     System.out.println(dobby.color);
+    
     }
 }
 
